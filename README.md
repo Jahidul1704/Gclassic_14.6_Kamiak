@@ -39,7 +39,7 @@ export NETCDF_C_INCLUDE_DIR=data/lab/meng/jahidul/netcdf/include
 
 export NETCDF_F_LIBRARY=data/lab/meng/jahidul/netcdf/lib/libnetcdff.so
 
-export NETCDF_C_LIBRARY=data/lab/meng/jahidul/netcdf/lib/libnetcdf.so"
+export NETCDF_C_LIBRARY=data/lab/meng/jahidul/netcdf/lib/libnetcdf.so
 
 # 9. Then do
 cmake ../CodeDir -DRUNDIR=..   -DNETCDF_C_LIBRARY=$NETCDF_C_LIBRARY   -DNETCDF_F_LIBRARY=$NETCDF_F_LIBRARY   -DNETCDF_C_INCLUDE_DIR=$NETCDF_C_INCLUDE_DIR   -DNETCDF_F90_INCLUDE_DIR=$NETCDF_F90_INCLUDE_DIR   -DCMAKE_PREFIX_PATH=$NETCDF_ROOT
