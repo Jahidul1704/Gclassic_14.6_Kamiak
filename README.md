@@ -23,7 +23,7 @@ cd run/
 ./createRunDir.sh
 # 5. And then create run directory as your choice
 # 6. Go to run directory that created before like
-cd /path/to/gc_4x5_merra2_fullchem 
+cd /your/run/directory
 # 7. Go to build directory 
  cd build
 # 8. Now this is modification for kamiak hpc
@@ -44,7 +44,7 @@ cmake ../CodeDir -DRUNDIR=..   -DNETCDF_C_LIBRARY=$NETCDF_C_LIBRARY   -DNETCDF_F
 make -j
 make install
 # 11. Great, now your compilation and installation are completed.
-cd /yor/run directory
+cd your/run/directory
 # 12.Now you can download input files by using dryrun simulation that is given in geoschem website(https://geos-chem.readthedocs.io/en/14.2.0/gcclassic-user-guide/dry-run-run.html)
 # 13. Then make change HEMCO_Config.rc, geoschem_config.yml and HISTORY.rc as like as your wish
 # 14. Now you just need to create batch job "geoschem_classic.sh" 
