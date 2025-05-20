@@ -45,7 +45,7 @@ make -j
 make install
 # 11. Great, now your compilation and installation are completed.
 cd /yor/run directory
-# 12.Now you can download input files by using dryrun simulation that is given in geoschem website
+# 12.Now you can download input files by using dryrun simulation that is given in geoschem website(https://geos-chem.readthedocs.io/en/14.2.0/gcclassic-user-guide/dry-run-run.html)
 # 13. Then make change HEMCO_Config.rc, geoschem_config.yml and HISTORY.rc as like as your wish
 # 14. Now you just need to create batch job "geoschem_classic.sh" 
 # 15. Then run geoschem_classic.sh by using
