@@ -41,10 +41,11 @@ export NETCDF_F_LIBRARY=data/lab/meng/jahidul/netcdf/lib/libnetcdff.so
 
 export NETCDF_C_LIBRARY=data/lab/meng/jahidul/netcdf/lib/libnetcdf.so
 
-# 9. Then do
+# 9. Compile 
 cmake ../CodeDir -DRUNDIR=..   -DNETCDF_C_LIBRARY=$NETCDF_C_LIBRARY   -DNETCDF_F_LIBRARY=$NETCDF_F_LIBRARY   -DNETCDF_C_INCLUDE_DIR=$NETCDF_C_INCLUDE_DIR   -DNETCDF_F90_INCLUDE_DIR=$NETCDF_F90_INCLUDE_DIR   -DCMAKE_PREFIX_PATH=$NETCDF_ROOT
-# 10. Then do 
+# 10. Install
 make -j
+
 make install
 # 11. Great, now your compilation and installation are completed.
 cd your/run/directory
