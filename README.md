@@ -5,8 +5,11 @@
 /data/lab/meng/jahidul/netcdf
 # 2. Then load all the modules GCC or Intel NetCDF, OpenMPI, and CMake modules.
 module load intel
+
 module load hdf5
+
 module load netcdf
+
 module load openmpi
 
 # 3. Then follow the guidelines from this website https://geos-chem.readthedocs.io/en/latest/getting-started/quick-start.html
