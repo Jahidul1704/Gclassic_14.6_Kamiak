@@ -24,9 +24,9 @@ cd run/
 # 5. And then create run directory as your choice
 # 6. Go to run directory that created before like
 cd /path/to/gc_4x5_merra2_fullchem 
-# 7. go to build directory 
+# 7. Go to build directory 
  cd build
-# 8.Now this is modification for kamiak hpc
+# 8. Now this is modification for kamiak hpc
 
 export NETCDF_ROOT=data/lab/meng/jahidul/netcdf
 
@@ -39,12 +39,13 @@ export NETCDF_F_LIBRARY=data/lab/meng/jahidul/netcdf/lib/libnetcdff.so
 export NETCDF_C_LIBRARY=data/lab/meng/jahidul/netcdf/lib/libnetcdf.so"
 
 # 9. Then do
-"cmake ../CodeDir -DRUNDIR=..   -DNETCDF_C_LIBRARY=$NETCDF_C_LIBRARY   -DNETCDF_F_LIBRARY=$NETCDF_F_LIBRARY   -DNETCDF_C_INCLUDE_DIR=$NETCDF_C_INCLUDE_DIR   -DNETCDF_F90_INCLUDE_DIR=$NETCDF_F90_INCLUDE_DIR   -DCMAKE_PREFIX_PATH=$NETCDF_ROOT"
+cmake ../CodeDir -DRUNDIR=..   -DNETCDF_C_LIBRARY=$NETCDF_C_LIBRARY   -DNETCDF_F_LIBRARY=$NETCDF_F_LIBRARY   -DNETCDF_C_INCLUDE_DIR=$NETCDF_C_INCLUDE_DIR   -DNETCDF_F90_INCLUDE_DIR=$NETCDF_F90_INCLUDE_DIR   -DCMAKE_PREFIX_PATH=$NETCDF_ROOT
 # 10. Then do 
 make -j
 make install
 # 11. Great, now your compilation and installation are completed.
-# 12.Now you can download input files by using dryrun simulation that given in geoschem website
+cd run directory
+# 12.Now you can download input files by using dryrun simulation that is given in geoschem website
 # 13. Then make change HEMCO_Config.rc, geoschem_config.yml and HISTORY.rc as like as your wish
 # 14. Now you just need to create batch job "geoschem_classic.sh" 
 # 15. Then run geoschem_classic.sh by using " sbatch geoschem_classic.sh"
