@@ -2,7 +2,7 @@
 **For your cluster, you have to check the availability of GCC or Intel NetCDF, OpenMPI, and CMake modules.**
 **In Kamiak hpc(WSU hpc) it has built in gcc, intel, openmpi, netcdf and cmake. For compiling geoschem classis it is require to use upgraded netcdf libraries which are not available in Kamiak**
 # 1. First step is to install upgraded netcdf in kamiak or just copy this module from other in my case it is in this directory 
-/data/lab/meng/jahidul/netcdd
+/data/lab/meng/jahidul/netcdf
 # 2. Then load all the modules GCC or Intel NetCDF, OpenMPI, and CMake modules.
 module load intel
 module load hdf5
